@@ -3,8 +3,6 @@ name: C/C++ CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -13,11 +11,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+
+    - name: compile
+      run: gcc test_calculadora.c -o test_calculadora
+
+    - name: execute
+      run: ./test_calculadora
