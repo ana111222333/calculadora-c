@@ -1,0 +1,12 @@
+int dividir(int a, int b) {
+
+    int contador = 0;
+    int soma = b;
+
+    while(soma <= a) {
+        soma += b;
+        contador++;
+    }
+
+    return contador;
+}
