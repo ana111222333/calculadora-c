@@ -1,9 +1,9 @@
 int dividir(int a, int b) {
 
     int contador = 0;
-    int soma = b;
+    int soma = 0;
 
-    while(soma <= a) {
+    while (soma < a) {
         soma += b;
         contador++;
     }
