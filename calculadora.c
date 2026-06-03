@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Protótipos
+
 int multiplicar(int a, int b);
 int dividir(int a, int b);
 
@@ -52,6 +52,8 @@ int main() {
         printf("Deseja fazer outra operacao? (s/n): ");
         scanf(" %c", &continuar);
     }
+    printf("Ana Beatriz Von Zastrow de Moraes\n");
 
     return 0;
 }
+
