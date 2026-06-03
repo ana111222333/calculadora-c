@@ -15,7 +15,7 @@ int main() {
     assert(dividir(99,3) == 33);
     assert(dividir(144,12) == 12);
 
-    printf("Todos os testes passaram!\n");
+printf("Todos os testes passaram!\n");
+printf("Ana Beatriz Von Zastrow de Moraes\n");
 
-    return 0;
-}
+return 0;
