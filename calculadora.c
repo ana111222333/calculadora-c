@@ -1,3 +1,5 @@
+#include "function_multiplicar.c"
+#include "function_dividir.c"
 #include <stdio.h>
 #include <stdlib.h>
 
