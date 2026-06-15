@@ -1,10 +1,14 @@
 int dividir(int a, int b) {
 
-    int contador = 0;
-    int soma = 0;
+    if (b == 0) {
+        printf("Erro: divisao por zero.\n");
+        return 0;
+    }
 
-    while (soma < a) {
-        soma += b;
+    int contador = 0;
+
+    while (a >= b) {
+        a -= b;
         contador++;
     }
 
