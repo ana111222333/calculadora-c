@@ -1,13 +1,45 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 int multiplicar(int a, int b);
 int dividir(int a, int b);
 
-int main() {
+int main(int argc, char *argv[]) {
+
     int opcao;
     int num1, num2;
     char continuar = 's';
+
+    if (argc > 1) {
+
+        opcao = atoi(argv[1]);
+        num1 = atoi(argv[2]);
+        num2 = atoi(argv[3]);
+
+        switch(opcao) {
+
+            case 1:
+                printf("Resultado: %d\n", num1 + num2);
+                break;
+
+            case 2:
+                printf("Resultado: %d\n", num1 - num2);
+                break;
+
+            case 3:
+                printf("Resultado: %d\n", dividir(num1, num2));
+                break;
+
+            case 4:
+                printf("Resultado: %d\n", multiplicar(num1, num2));
+                break;
+
+            default:
+                printf("Opcao indisponivel\n");
+        }
+
+        return 0;
+    }
 
     while (continuar == 's' || continuar == 'S') {
 
@@ -52,8 +84,8 @@ int main() {
         printf("Deseja fazer outra operacao? (s/n): ");
         scanf(" %c", &continuar);
     }
+
     printf("Ana Beatriz Von Zastrow de Moraes\n");
 
     return 0;
 }
-
