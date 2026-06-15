@@ -8,3 +8,20 @@ int multiplicar(int a, int b) {
 
     return resultado;
 }
+
+int dividir(int a, int b) {
+
+    if (b == 0) {
+        printf("Erro: divisao por zero.\n");
+        return 0;
+    }
+
+    int contador = 0;
+
+    while (a >= b) {
+        a -= b;
+        contador++;
+    }
+
+    return contador;
+}
